@@ -24,17 +24,15 @@ while tentatives > 0:
         tentatives -= 1
         print("-> Dommage, il te reste",tentatives," tentatives")
 
-
     affichage = ""
     for x in word:
         if x in lettres_trouvees:
             affichage += x + " "
-            print("la")
         else:
             affichage += "_ "
 
-if "_" not in affichage:
-    print(">>> Gagné! <<<")
-    
+    if "_" not in affichage:
+        print(">>> Gagné! <<<")
+        break
 
 print(" fin de la partie")
