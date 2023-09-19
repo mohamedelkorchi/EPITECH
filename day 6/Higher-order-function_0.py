@@ -58,21 +58,39 @@
 
 def funD(s, n):
    
-   count = 0
+    count = 0
 
-   for c in s:
-       if (c.isalpha() or c.isdigit() or c == " "):
-        return False
-       else :
-           count += 1
-           return True
+    #    for c in s:
+    #        if (c.isalpha() or c.isdigit() or c == " "):
+    #         return False
+    #        else :
+    #            count += 1
+    #            return True
+    # for i in range(len(s)):
+    #     if (s[i].isalpha() or s[i].isdigit() or s[i]):
+    #      return False
+    #     else : 
+    #      count += 1
+    #      return True
 
-   if count >= n:
-     return True
-   else :
-     return False
-       
-print(funD("Wech le @$ mec du 94", 1))
+    # if count >= n:
+    #     return True
+    # else :
+    #     return False
+
+    for i in range(len(s)):
+        if s[i].isalnum()== False:
+            count += 1
+
+    if count >= n:
+        print(True)
+    else :
+        print(False)
+    
+
+
+print(funD("Wechlemecdu94", 1))
+
 
 
 
