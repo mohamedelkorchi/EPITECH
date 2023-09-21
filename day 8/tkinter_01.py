@@ -36,6 +36,4 @@ showButton.pack()
 addboxButton = Button(root, text='<Add Time Input>', fg="Red", command=addBox)
 addboxButton.pack()
 
-
-
 root.mainloop()
