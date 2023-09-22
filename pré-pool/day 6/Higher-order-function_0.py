@@ -60,6 +60,15 @@ def funD(s, n):
    
     count = 0
 
+    for i in range(len(s)):
+        if s[i].isalnum()== False:
+            count += 1
+
+    if count >= n:
+        print(True)
+    else :
+        print(False)
+
     #    for c in s:
     #        if (c.isalpha() or c.isdigit() or c == " "):
     #         return False
@@ -77,16 +86,6 @@ def funD(s, n):
     #     return True
     # else :
     #     return False
-
-    for i in range(len(s)):
-        if s[i].isalnum()== False:
-            count += 1
-
-    if count >= n:
-        print(True)
-    else :
-        print(False)
-    
 
 
 print(funD("Wechlemecdu94", 1))
