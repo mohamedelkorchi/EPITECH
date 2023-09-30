@@ -1,0 +1,26 @@
+body {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap; /* fonctionne avec le display grid et grid template ( style de bootstrap )*/ 
+}
+.box {
+    border: solid 2px ;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: white;
+}
+header {
+    width: 100%;
+    display : grid;
+    grid-template-columns: 5fr 1fr;
+}
+main {
+    width: 80%;
+}
+aside {
+    width: 14%;
+}
+
+footer{
+    width: 100%;
+}

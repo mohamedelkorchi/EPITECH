@@ -1,0 +1,61 @@
+body {
+    background-color: grey;
+    display: flex;
+    flex-wrap: wrap; /* fonctionne avec le display grid et grid template ( style de bootstrap )*/ 
+}
+.box {
+    border: solid 2px ;
+    padding: 0 10px;
+    margin: 10px;
+    background-color: white;
+}
+header {
+    width: 100%;
+    display : grid;
+    grid-template-columns: 5fr 1fr;
+}
+main {
+    width: 80%;
+}
+aside {
+    width: 14%;
+}
+
+footer{
+    width: 100%;
+}
+
+.moving_square {
+    
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    animation-name: squareMove;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes squareMove {
+    0% {
+        transform: translateY(0) translateX(0);
+        background-color: red;
+    }
+    25% {
+        transform: translateY(300px) translateX(0px);
+        background-color: green;
+    }
+    50% {
+        transform: translateY(300px) translateX(300px);
+        background-color: blue;
+    }
+    75% {
+        transform: translateY(0) translateX(300px);
+        background-color: yellow;
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        background-color: red;
+    }
+}

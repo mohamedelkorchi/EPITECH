@@ -1,0 +1,41 @@
+@media screen and (max-width : 767px) {
+    body{
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    header {
+        width: 100%;
+        height: 70px;
+        margin: 5px 3px;
+        background-color: rgb(162, 162, 238);
+    }
+    .first_section{
+        height: 140px;
+        width: 100%;
+        margin: 5px 3px;
+        background-color: rgb(119, 237, 119);
+    }
+    .part1{
+        height: 140px;
+        width: 100%;
+        margin: 10px 3px;
+        background-color: yellow;
+    }
+    .part2{
+        height: 140px;
+        width: 100%;
+        margin: 5px 3px;
+        background-color: yellow;
+    }
+    footer{
+        height: 70px;
+        width: 100%;
+        margin: 5px 3px;
+        background-color: red;
+    }
+}
+
